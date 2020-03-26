@@ -8,6 +8,10 @@ function hp=tohyperplanes(k3,coords)
 m=size(k3,1);
 
 hp=zeros(m,4);
+
+%% is this really right?
+%% how to determine the interior space of the convex hull?
+%% how to determine the direction of the normal vector of each facet?
 for i=1:m
   p1=coords(k3(i,1),:)';
   p2=coords(k3(i,2),:)';
